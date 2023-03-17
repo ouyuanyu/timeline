@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/login.css" %}'>
+
+    <meta charset="UTF-8">
+    <title>登录</title>
+  <style ></style>
+
+</head>
+<body>
+
+<!--login-->
+<div class="textCenter">
+     <div class="form-box">
+         <form class="form">
+           <span class="title">Login</span>
+           <span class="subtitle">write your name and password</span>
+           <div class="form-container">
+               <input type="text" class="input" placeholder=" Name">
+			   <input type="password" class="input" placeholder="Password">
+           </div>
+           <button>Login</button>
+
+         </form>
+     <div class="form-section">
+     <p>Need an account? <a href="{% url 'user:register' %}">Sign up </a> </p>
+     </div>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
